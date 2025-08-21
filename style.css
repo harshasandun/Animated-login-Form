@@ -1,0 +1,25 @@
+
+  body {
+    margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh;
+    background: linear-gradient(-45deg, #ff4e50, #f9d423, #24c6dc, #514a9d);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+  }
+  @keyframes gradient {
+    0%,100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px; border-radius: 15px; backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    width: 300px; text-align: center; color: white;
+  }
+  input {
+    width: 100%; padding: 10px; margin: 10px 0; border: none; border-radius: 8px;
+    background: rgba(255,255,255,0.2); color: white; outline: none;
+    transition: box-shadow 0.3s;
+  }
+  input:focus {
+    box-shadow: 0 0 10px #00fff2;
+  }
